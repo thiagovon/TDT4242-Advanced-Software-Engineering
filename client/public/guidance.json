@@ -1,0 +1,45 @@
+{
+  "_comment": "R-6: Configurable guidance content — edit this file to customise tooltips, hints, and help text without code deployment.",
+  "institution": "NTNU",
+  "tooltips": {
+    "originBadge_auto_generated": "This field was automatically generated from your AI interaction logs.",
+    "originBadge_auto_generated_modified": "This field was originally auto-generated but you have edited it. The original version is preserved in version history.",
+    "originBadge_manual": "This field was manually added by you.",
+    "coverage_discrepancy": "Your declaration currently covers fewer interactions than your logs show. Consider adding manual entries for any missing usage.",
+    "integrity_warning": "These warnings are advisory. You may still submit, but must acknowledge them during the confirmation step.",
+    "reflection_word_count": "Each reflection prompt requires at least 25 words. Write a genuine personal reflection — repetitive or nonsensical text will be flagged.",
+    "manual_entry_reason": "Select the reason that best explains why this AI usage was not captured by the automatic logging system.",
+    "time_period_locked": "The time period for this declaration is locked. Any AI interactions outside this window will not appear in the auto-generated draft, but you may declare them manually."
+  },
+  "hints": {
+    "draft_editor": "Review each auto-generated entry and correct any inaccuracies. If you delete an auto-generated entry, consider whether a manual entry is needed.",
+    "reflection": "Your reflection is private and used to support your own learning documentation. Be honest and specific.",
+    "manual_entries": "Declare any AI usage that occurred outside the logging system — for example, ChatGPT accessed from your phone or a tool not connected to AIGuidebook.",
+    "review": "This is a final read-only preview. Once you submit, your declaration will be recorded. Check all entries carefully before confirming."
+  },
+  "helpSection": {
+    "title": "How to complete your AI Usage Declaration",
+    "sections": [
+      {
+        "heading": "What is an AI Usage Declaration?",
+        "body": "An AI Usage Declaration is a record of how you used generative AI tools (such as ChatGPT, GitHub Copilot, or Claude) while working on your assignment. NTNU requires students to declare this usage to maintain academic integrity."
+      },
+      {
+        "heading": "Auto-generated entries",
+        "body": "The system automatically creates declaration entries from your AI interaction logs. You should review these entries for accuracy and edit them if needed. Editing an entry changes its badge from 'Auto-generated' to 'Auto-generated (edited)'."
+      },
+      {
+        "heading": "Manual entries",
+        "body": "If you used AI tools that were not captured by the logging system (e.g., on a personal device), you can add them manually under the 'Manual Entries' step."
+      },
+      {
+        "heading": "Integrity warnings",
+        "body": "If the system detects that your declaration may underrepresent your actual AI usage, it will show advisory warnings. These do not block submission, but you must acknowledge them when you confirm."
+      },
+      {
+        "heading": "Reflection",
+        "body": "You must answer two structured reflection prompts (at least 25 words each) before you can submit your declaration."
+      }
+    ]
+  }
+}

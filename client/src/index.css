@@ -1,0 +1,79 @@
+/* Global styles — AI Guidebook for Students */
+/* R-7: WCAG 2.1 AA compliant color tokens defined here */
+
+:root {
+  /* Neutral */
+  --color-bg: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text-primary: #212529;
+  --color-text-secondary: #495057;
+  --color-text-muted: #6c757d;
+
+  /* Brand */
+  --color-primary: #0052cc;
+  --color-primary-hover: #003d99;
+  --color-primary-text: #ffffff;
+
+  /* Origin badges — R-1 */
+  --badge-auto-bg: #e3f2fd;
+  --badge-auto-text: #0d47a1;
+  --badge-auto-modified-bg: #fff3e0;
+  --badge-auto-modified-text: #e65100;
+  --badge-manual-bg: #e8f5e9;
+  --badge-manual-text: #1b5e20;
+
+  /* Warnings — R-8 */
+  --color-warning-bg: #fff8e1;
+  --color-warning-border: #f59e0b;
+  --color-warning-text: #78350f;
+
+  /* Errors / validation */
+  --color-error-bg: #fef2f2;
+  --color-error-border: #ef4444;
+  --color-error-text: #7f1d1d;
+
+  /* Discrepancy highlight — R-2 */
+  --color-discrepancy-bg: #fff3e0;
+  --color-discrepancy-text: #c2410c;
+
+  /* Typography */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Focus visible — R-7: keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Skip link — R-7: accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-primary-text);
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 0;
+}
