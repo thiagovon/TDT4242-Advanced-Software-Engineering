@@ -89,15 +89,7 @@ Create a table mapping every requirement to its test cases and implementation co
 Rules:
 - Every requirement (FR-26 through FR-32, NFR-47, NFR-48) must appear exactly once.
 - List all relevant Test IDs from Section 1 for each requirement.
-- For implementation reference, use plausible component/file names such as:
-  - `DeclarationGenerator` (draft generation logic)
-  - `StatisticsService` (usage statistics and insights)
-  - `DeclarationReviewPage` (review UI)
-  - `DeclarationEditForm` (edit/modify form)
-  - `ReflectionInput` (reflection text component)
-  - `HelpSystem` / `TooltipProvider` (help and explanations)
-  - `MainLayout` / `NavigationBar` (UI structure)
-  - Or whatever component names match the actual codebase — adjust these to fit.
+- For implementation reference, use component/file names from the codebase.
 
 ---
 
