@@ -4,7 +4,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
-import DraftEditorModule from '../index';
+import DraftEditorModule from '../../../modules/DraftEditorModule/index';
 import { WarningsProvider } from '../../../contexts/WarningsContext';
 import type { DeclarationEntry, InteractionLog, Assignment } from '../../../types/api';
 
@@ -241,7 +241,7 @@ describe('DraftEditorModule', () => {
 
 describe('OriginBadge', () => {
   it('R-1: renders correct badge for each origin type', async () => {
-    const { default: OriginBadge } = await import('../OriginBadge');
+    const { default: OriginBadge } = await import('../../../modules/DraftEditorModule/OriginBadge');
 
     const { rerender } = render(<OriginBadge origin="auto-generated" />);
     expect(screen.getByText('Auto-generated')).toBeInTheDocument();

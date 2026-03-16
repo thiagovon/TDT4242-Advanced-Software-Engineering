@@ -2,7 +2,7 @@
 // Verifies user-facing behavior: word count enforcement, repetition detection.
 
 import { describe, it, expect } from 'vitest';
-import { validatePrompt, validateReflection, countWords, hasRepetition, MIN_WORDS } from '../validation';
+import { validatePrompt, validateReflection, countWords, hasRepetition, MIN_WORDS } from '../../../modules/ReflectionModule/validation';
 
 describe('countWords', () => {
   it('counts single words correctly', () => {
@@ -62,7 +62,6 @@ describe('R-5: validatePrompt', () => {
   });
 
   it('R-5: fails when response contains repetition even if word count is met', () => {
-    // Pad with repetition to reach 25 words
     const basePhrase = 'AI helped me with the work. ';
     const text = basePhrase.repeat(5);
     const result = validatePrompt(text);

@@ -3,7 +3,7 @@
 
 import { describe, it, expect } from 'vitest';
 import type { OriginType } from '../../../events/types';
-import { COVERAGE_THRESHOLD, SCOPE_REDUCTION_CHAR_THRESHOLD } from '../index';
+import { COVERAGE_THRESHOLD, SCOPE_REDUCTION_CHAR_THRESHOLD } from '../../../modules/IntegrityMonitor/index';
 
 // Test pure logic helpers directly, then test hook integration via renderHook
 

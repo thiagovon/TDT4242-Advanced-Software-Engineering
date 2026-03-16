@@ -5,7 +5,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
-import UnassignedQueue from '../UnassignedQueue';
+import UnassignedQueue from '../../../modules/DraftEditorModule/UnassignedQueue';
 import type { InteractionLog } from '../../../types/api';
 
 vi.mock('../../../hooks/useApi', () => ({

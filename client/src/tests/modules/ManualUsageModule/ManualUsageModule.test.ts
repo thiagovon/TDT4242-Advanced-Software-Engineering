@@ -2,7 +2,7 @@
 // Verifies user-facing behavior: required fields, minimum word count, predefined reasons.
 
 import { describe, it, expect } from 'vitest';
-import { REASON_OPTIONS, MANUAL_DESCRIPTION_MIN_WORDS } from '../index';
+import { REASON_OPTIONS, MANUAL_DESCRIPTION_MIN_WORDS } from '../../../modules/ManualUsageModule/index';
 
 describe('R-10: ManualUsageModule constants', () => {
   it('requires description to be at least 15 words', () => {

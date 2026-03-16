@@ -5,7 +5,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import React from 'react';
-import ReviewAggregator from '../index';
+import ReviewAggregator from '../../../modules/ReviewAggregator/index';
 import { WarningsProvider } from '../../../contexts/WarningsContext';
 import { ReflectionProvider } from '../../../contexts/ReflectionContext';
 import type { DeclarationFull } from '../../../types/api';
@@ -113,7 +113,6 @@ describe('ReviewAggregator', () => {
   it('R-3: review step is NOT skippable — two actions required', async () => {
     renderWithProviders(<ReviewAggregator declarationId="decl-001" />);
     await waitFor(() => screen.getByText('Submit Declaration'));
-    // Without checking checkbox, submit must remain disabled
     const btn = screen.getByRole('button', { name: /Submit Declaration/i });
     expect(btn).toBeDisabled();
   });
